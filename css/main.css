@@ -530,7 +530,7 @@ a {
   text-decoration: none;
   border-bottom: 1px solid #dadada;
   color: inherit;
-  
+
   -webkit-transition: color 0.2s, border-bottom-color 0.2s ease-in-out;
   -moz-transition: color 0.2s, border-bottom-color 0.2s ease-in-out;
   transition: color 0.2s, border-bottom-color 0.2s ease-in-out;
@@ -684,11 +684,11 @@ header h3 {
   background: transparent url(../img/search.png) right center no-repeat;
   text-align: right;
   opacity: 0;
-  
+
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
-  
+
   -webkit-transition: opacity 0.3s, background-color 0.2s ease-in-out;
   -moz-transition: opacity 0.3s, background-color 0.2s ease-in-out;
   transition: opacity 0.3s, background-color 0.2s ease-in-out;
@@ -967,55 +967,55 @@ footer p {
  * Section colors
  */
 
-.quality-of-life a:hover, .quality-of-life .toc .active {
+.demographics a:hover, .demographics .toc .active {
   color: #f46801;
   border-bottom-color: rgba(244, 104, 1, 0.1);
 }
 
-.quality-of-life #logo {
+.demographics #logo {
   background-color: #f46801;
 }
 
-.quality-of-life #search-query.focused {
+.demographics #search-query.focused {
   border-color: #f46801;
 }
 
-.appearance a:hover, .appearance .toc .active {
+.quality-of-life a:hover, .quality-of-life .toc .active {
   color: #6f2ea2;
   border-bottom-color: rgba(244, 104, 1, 0.1);
 }
 
-.appearance #logo {
+.quality-of-life #logo {
   background-color: #6f2ea2;
 }
 
-.appearance #search-query.focused {
+.quality-of-life #search-query.focused {
   border-color: #6f2ea2;
 }
 
-.economy a:hover, .economy .toc .active {
+.planned-economic-development a:hover, .planned-economic-development .toc .active {
   color: #f3b600;
   border-bottom-color: rgba(244, 104, 1, 0.1);
 }
 
-.economy #logo {
+.planned-economic-development #logo {
   background-color: #f3b600;
 }
 
-.economy #search-query.focused {
+.planned-economic-development #search-query.focused {
   border-color: #f3b600;
 }
 
-.land-use a:hover, .land-use .toc .active {
+.built-environment a:hover, .built-environment .toc .active {
   color: #09a15d;
   border-bottom-color: rgba(244, 104, 1, 0.1);
 }
 
-.land-use #logo {
+.built-environment #logo {
   background-color: #09a15d;
 }
 
-.land-use #search-query.focused {
+.built-environment #search-query.focused {
   border-color: #09a15d;
 }
 
@@ -1383,11 +1383,11 @@ footer p {
     text-align: center;
     overflow: auto;
   }
-  
+
   .title {
     margin-right: 0;
   }
-  
+
   #logo {
     right: 50%;
     margin-right: -34px;
@@ -1460,7 +1460,7 @@ footer p {
     -moz-background-size: 49px 36px;
     background-size: 49px 36px;
   }
-  
+
   #search-query {
     background-image: url(../img/search@2x.png);
     -webkit-background-size: 32px 21px;
