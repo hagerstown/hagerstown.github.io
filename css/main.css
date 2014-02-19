@@ -1019,22 +1019,23 @@ footer p {
   border-color: #09a15d;
 }
 
-.thumbs {
-  margin: 1em 0;
-  line-height: 0;
-}
-
-.thumb, .fancybox-close {
-  display: inline-block;
-  width: 135px;
-  height: 100px;
+.fancybox-close {
   margin-top: 4px;
   border: none;
-  overflow: hidden;
 }
 
-.thumb img {
-  margin: -30% 0 0 -30%;
+.fancy {
+  display: inline-block;
+  border: none;
+  margin-right: 10px;
+  margin-bottom: 10px;
+}
+.fancy img {
+  max-height: 135px;
+  border: 10px solid #f2f2f2;
+}
+.fancy:hover img {
+  border-color: #39c;
 }
 
 /**

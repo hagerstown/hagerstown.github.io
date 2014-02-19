@@ -193,6 +193,13 @@ $.getJSON('/site-index.json', function(indexData) {
   });
 });
 
+$('article#main div.wrapper img').each(function(){
+  $this = $(this);
+  var src = $this.attr('src');
+  var alt = $this.attr('alt');
+  $this.wrap('<a title="' + alt + '" href="' + src + '" class="fancy" rel="photos">');
+});
+
 
 // Fancybox
 $(".thumb").fancybox({
