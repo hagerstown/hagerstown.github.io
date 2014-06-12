@@ -837,6 +837,18 @@ footer p {
 /**
 * Full report for print
 */
+
+.full-report body, .full-report aside:before, .full-report .aside:before {
+  font-family: Georgia, serif !important;
+}
+
+.full-report .full-report h1, .full-report h2, .full-report h3, .full-report h4, .full-report h5, .full-report h6,
+.full-report header, .full-report footer, .full-report table,
+.controls, .aside, aside,
+.ph, .note {
+  font-family: sans-serif !important;
+}
+
 .full-report header {
   width: 100%;
   position: static;
@@ -1032,6 +1044,10 @@ footer p {
 }
 .fancy img {
   max-height: 135px;
+  border: 10px solid #f2f2f2;
+}
+.large-thumb .fancy img {
+  max-height: 500px;
   border: 10px solid #f2f2f2;
 }
 .fancy:hover img {

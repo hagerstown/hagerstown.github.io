@@ -49,13 +49,12 @@ function getPrev($cur) {
   if ($parent.hasClass('section')) { // main section
     $prevLink = $prevParent.find('ul li:last-child a');
 
-    if ($prevParent[0] === undefined) {
-      return {
-        'name': 'Home',
-        'href': $('.title a').attr('href')
-      };
+    if ($prevLink[0] === undefined) {
+      $prevLink = $prevParent.find('a');
     }
-
+    if ($prevLink[0] === undefined) {
+      return false;
+    }
     return { 'name': $prevLink.text(), 'href': $prevLink.attr('href') };
   } else { // subsection
     if ($prevParent[0] === undefined) {
@@ -87,6 +86,12 @@ function getNext($cur) {
 
   if ($parent.hasClass('section')) { // main section
     $nextLink = $cur.next().children().first().children();
+    if ($nextLink[0] === undefined) {
+      $nextLink = $cur.parent().next().children('a').first();
+    }
+    if ($nextLink[0] === undefined) {
+      return false;
+    }
 
     return { 'name': $nextLink.text(), 'href': $nextLink.attr('href') };
   } else { // subsection
@@ -203,6 +208,14 @@ $('article#main div.wrapper img').each(function(){
 
 // Fancybox
 $(".thumb").fancybox({
+  helpers: {
+    thumbs: {
+      width: 50,
+      height: 50
+    }
+  }
+});
+$(".large-thumb").fancybox({
   helpers: {
     thumbs: {
       width: 50,
